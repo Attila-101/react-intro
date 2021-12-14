@@ -5,7 +5,7 @@ const FirstTab = () => {
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch(
-        'http://apis.is/currency/m5',
+        'https://apis.is/currency/m5',
       );
       const json = await res.json();
       setData(json.results);
